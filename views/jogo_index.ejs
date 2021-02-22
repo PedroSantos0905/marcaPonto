@@ -1,0 +1,55 @@
+
+<style>
+.container {
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center
+}
+.box {
+width: 300px;
+height: 300px;
+}
+body {
+margin: 0px;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/estilo.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <br>
+        <h2><%= title %></h2>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NOVO JOGO</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" value="1" name="tipo_jogo" href="/novo_jogo">Melé</a>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </table>    
+    </div>
+    </div>
+</body>
+</html>
